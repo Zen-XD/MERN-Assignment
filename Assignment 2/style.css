@@ -61,15 +61,20 @@ a{
 main{
     padding-top: 80px;
     height: 100vh;
+    color: rgb(185, 57, 57) ;
+}
+
+.section{
+    padding: 0 10%;
 }
 
 #welcome{
-    background-image: url("https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg");
+    background-image: url("https://images.pexels.com/photos/1714205/pexels-photo-1714205.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    height: 100%;   
+    height: 100%;
     
     color: rgb(185, 57, 57);
     text-align: center;
@@ -94,13 +99,55 @@ h1{
 }
 
 #ghub{
-    border: 2px solid rgb(185, 57, 57);
     background-color: rgb(185, 57, 57);
     color: white;
     border-radius: 15px;
-    padding: 0 10px;
+    padding: 2px 12px;
 }
 
+.section{
+    display: flex;
+ 
+    padding: 5% 10%;
+}
 
+#about{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content:center ;
+}
 
+.subheadings{
+    font-size: 32px;
+    text-align: center;
+    flex: 1 1 100%;
+    padding-bottom: 2%;
+
+    text-transform: capitalize;
+}
+
+#img2{
+    background-image: url("https://images.pexels.com/photos/18069157/pexels-photo-18069157.png");
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin: 0 5%;
+
+    /* flex: 1 3 30%; */
+}
+
+.aboutp{
+    flex: 2 1 30%;
+    text-align: justify;
+    padding: 5% 0;
+    
+}
+
+.aboutp::first-letter{
+    font-size: 2em;
+}
 
