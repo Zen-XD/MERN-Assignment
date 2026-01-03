@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#welcome" class="box" id="my_portfolio">My Portfolio</a>
+            <a href="#about" class="box">About</a>
+            <a href="#skiills" class="box">Skills</a>
+            <a href="#services" class="box">Services</a>
+            <a href="#portfolio" class="box">Portfolio</a>
+            <a href="#testi" class="box">Testimonials</a>
+            <a href="#contact" class="box">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="welcome">
+            <h1>Hello, I'm Zen</h1>
+            <p id="intro">Aspiring Web Developer & Designer</p>
+            <a href="https://github.com/Zen-XD" target="_blank" id="ghub">Explore my work</a>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I love <i>coding</i>, <u>designing websites</u>, and exploring <mark>new technologies</mark>.</p>
+            <img src="./IMG_0486.jpg" alt="My photo" width="200">
+        </section>
+
+        <hr>
+
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <ol type="a">
+                <li>Coding
+                    <ul type="square">
+                        <li>javascript</li>
+                        <li>python</li>
+                        <li>c++</li>
+                    </ul>
+                </li>
+                <li>Gaming</li>
+                <li>Music</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section id="edu">
+            <h2>Education</h2>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Qualification</th>
+                        <th>Institute</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2010-2021</td>
+                        <td>Higher Secondary Certificate</td>
+                        <td>Modern Indian School</td>
+                    </tr>
+                    <tr>
+                        <td>2022-Present</td>
+                        <td>Bachelor's Degree in Computer Engineering</td>
+                        <td>National College of Engineering</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="travel">
+            <h2>My Favorite Place</h2>
+            <p>I love visiting <mark>Japan</mark>. Here's a vlog about it:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tMIDpbmFoL8?si=ZKn3d_vt9QyAftsL"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <hr>
+
+        <section id="music">
+            <h2>My Favorite Music</h2>
+            <ol>
+                <li>Unity - TheFatRat</li>
+                <li>Can't Help Falling(ft. Yara Fabricante) - Gustixia</li>
+            </ol>
+            <audio src="./Gustixa - can't help falling in love (ft. Yara Fabricante).mp3" controls loop muted></audio>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <form autocomplete="off" method="post">
+                <h2>Contact Me</h2>
+                <label for="fn">FullName:</label>
+                <input type="text" name="fn" id="fn" placeholder="Enter your full name" required>
+
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+                <br><br>
+
+                <label>Gender:</label>
+                <input type="radio" name="gender" id="male" value="m" required>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="f">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="other" value="o">
+                <label for="other">Other</label>
+
+                <br><br>
+
+                <label>Courses Intrested:</label>
+                <input type="checkbox" name="courses" id="html" value="html">
+                <label for="html">HTML</label>
+                <input type="checkbox" name="courses" id="css" value="css">
+                <label for="css">CSS</label>
+                <input type="checkbox" name="courses" id="js" value="js">
+                <label for="js">JavaScript</label>
+
+                <br><br>
+
+                <label for="country">Country:</label>
+                <select name="country" id="country" required>
+                    <option value="nep" selected>Nepal</option>
+                    <option value="ch">China</option>
+                    <option value="usa">USA</option>
+                    <option value="aus">Australia</option>
+                    <option value="jp">Japan</option>
+                </select>
+
+                <br><br>
+
+                <label for="pw">Password:</label>
+                <input type="password" name="pw" id="pw" placeholder="Enter your password" minlength="8" maxlength="20"
+                    required>
+
+                <br><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2025 Rojen Maharjan | All rights reserved.</p>
+
+</body>
+
+</html>
