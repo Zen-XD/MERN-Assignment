@@ -151,3 +151,42 @@ h1{
     font-size: 2em;
 }
 
+#skills{
+    flex-direction: column;
+}
+
+h3{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.bar{
+    border: 1px solid rgb(185, 57, 57);
+    height: 16px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.fill{
+    position: relative;
+    height: 100%;
+    border-radius: 6px;
+    background-color: rgb(185, 57, 57);
+}
+
+#html{
+        width: 90%;
+}
+
+#css{
+        width: 75%;
+}
+
+#js{
+        width: 10%;
+}
+
+#rd{
+    width: 50%;
+}
