@@ -148,6 +148,15 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
+    margin-top: 50px;
+}
+
+.abme {
+    font-size: 32px;
+    text-align: center;
+    flex: 1 1 100%;
+
+    text-transform: capitalize;
 }
 
 #img2 {
