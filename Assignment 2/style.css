@@ -1,3 +1,5 @@
+/* -------------------------General Settings----------------------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
 
 * {
@@ -13,16 +15,16 @@ body {
     scroll-behavior: smooth;
     scroll-padding: 80px;
 
-    font-family:"Zain", sans-serif ;
+    font-family: "Zain", sans-serif;
 
     background-color: rgb(255, 235, 210);
 
-    color: rgb(185, 57, 57); 
+    color: rgb(185, 57, 57);
 
     overscroll-behavior-y: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: rgb(185, 57, 57);
 }
@@ -54,12 +56,12 @@ nav {
     align-items: center;
     margin: auto;
     padding: 0 5px;
-    
+
 }
 
-.nav:hover{
-    color:  rgb(185, 57, 57);
-    text-shadow: 
+.nav:hover {
+    color: rgb(185, 57, 57);
+    text-shadow:
         0px 1px 1px rgb(255, 255, 255),
         0px 5px 10px rgb(255, 255, 255),
         0px 10px 20px rgb(255, 255, 255);
@@ -76,61 +78,61 @@ nav {
 
 /* -------------------------Front Page----------------------------- */
 
-main{
+main {
     padding-top: 80px;
     height: 100vh;
 }
 
-#welcome{
+#welcome {
     background-image: url("https://images.pexels.com/photos/1714205/pexels-photo-1714205.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     height: 100%;
-    
+
     text-align: center;
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    align-content:center ;
+    align-content: center;
 }
 
-h1{
+h1 {
     text-shadow: 3px 3px white;
     text-transform: uppercase;
     font-size: 80px;
     letter-spacing: 5px;
 }
 
-#intro{
+#intro {
     font-size: 30px;
 }
 
-#ghub{
+#ghub {
     background-color: rgb(185, 57, 57);
     color: white;
     border-radius: 15px;
     padding: 2px 12px;
 }
 
-#ghub:hover{
+#ghub:hover {
     background-color: white;
     color: rgb(185, 57, 57);
 }
 
 /* -------------------------Section Settings----------------------------- */
 
-.section{
+.section {
     display: flex;
 
     padding: 5% 10%;
 }
 
-.subheadings{
+.subheadings {
     font-size: 32px;
     text-align: center;
     flex: 1 1 100%;
@@ -141,53 +143,58 @@ h1{
 
 /* -----------------------About Me------------------------------- */
 
-#about{
+#about {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    align-content:center ;
+    align-content: center;
 }
 
-#img2{
+#img2 {
     background-image: url("https://images.pexels.com/photos/18069157/pexels-photo-18069157.png");
     width: 250px;
     height: 250px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 15px;
 
     margin: 0 5%;
+
+    box-shadow: 1px 1px 5px rgb(155, 155, 155);
 
     transition-duration: 1s;
 }
 
-#img2:hover{
+#img2:hover {
     transform: scale(1.5, 1.5);
+
+    box-shadow: 5px 5px 15px rgb(155, 155, 155);
 }
 
-.p_about{
+.p_about {
     flex: 2 1 30%;
     text-align: justify;
     padding: 5% 0;
     min-width: 300px;
 }
 
-.p_about::first-letter{
+.p_about::first-letter {
     font-size: 2em;
 }
 
 /* -------------------------Skills----------------------------- */
 
-#skills{
+#skills {
     flex-direction: column;
 }
 
-.h_skills{
+.h_skills {
     font-weight: 300;
     font-size: 14px;
 }
 
-.bar{
+.bar {
     background-color: white;
     height: 16px;
     width: 100%;
@@ -195,82 +202,99 @@ h1{
     margin-bottom: 15px;
 }
 
-.fill{
+.fill {
     position: relative;
     height: 100%;
     border-radius: 8px;
     background-color: rgb(185, 57, 57);
 }
 
-#html{
-        width: 90%;
+#html,
+#css,
+#js,
+#rd {
+    width: 0%;
+    transition: width 0s 999999s;
 }
 
-#css{
-        width: 75%;
+.s_box:hover #html {
+    width: 90%;
+    transition: width 1s ease-in-out 0s;
 }
 
-#js{
-        width: 10%;
+.s_box:hover #css {
+    width: 75%;
+    transition: width 1s ease-in-out 0s;
 }
 
-#rd{
+.s_box:hover #js {
+    width: 10%;
+    transition: width 1s ease-in-out 0s;
+}
+
+.s_box:hover #rd {
     width: 50%;
+    transition: width 1s ease-in-out 0s;
 }
 
 /* -------------------------Services----------------------------- */
 
-#services{
+#services {
     flex-direction: column;
 }
 
-.g_serv{
+.g_serv {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
-.b_serv{
+.b_serv {
     padding: 30px 30px;
-        
+
     background-color: white;
     border-radius: 10px;
-    box-shadow: 1px 1px 5px rgb(155, 155, 155) ;
+    box-shadow: 1px 1px 5px rgb(155, 155, 155);
 }
 
-.p_serv{
+.b_serv:hover {
+    box-shadow: 5px 5px 15px rgba(3, 0, 0, 0.3)
+}
+
+.p_serv {
     line-height: 1;
 }
 
 /* --------------------------Portfolio / My Work---------------------------- */
 
-#portfolio{
+#portfolio {
     flex-direction: column;
 }
 
-.g_port{
+.g_port {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
-.b_port{
+.b_port {
     padding: 30px 30px;
     margin: 0 auto;
-    
+
     background-color: white;
     border-radius: 10px;
-    box-shadow: 1px 1px 5px rgb(155, 155, 155) ;    
+    box-shadow: 1px 1px 5px rgb(155, 155, 155);
 }
 
-.b_port:hover{
+.b_port:hover {
     box-shadow: 5px 5px 15px rgba(3, 0, 0, 0.3);
 }
 
-.p_port{
-    line-height: 1;}
+.p_port {
+    line-height: 1;
+}
 
-.projectimg{
+.projectimg {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -281,17 +305,17 @@ h1{
 
 /* ---------------------------Testimonies--------------------------- */
 
-#testi{
+#testi {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    align-content:center ;
+    align-content: center;
     flex-direction: column;
     gap: 20px;
     padding: 5% 25%;
 }
 
-.t_box{
+.b_testi {
     padding: 8px 30px;
     flex: 1 1 100%;
     width: 100%;
@@ -299,22 +323,36 @@ h1{
 
     border-left: 4px solid rgb(185, 57, 57);
     background-color: white;
-    box-shadow: 1px 1px 5px rgb(155, 155, 155) ;
+    box-shadow: 1px 1px 5px rgb(155, 155, 155);
     height: 10px;
+}
+
+.p_testi {
+    opacity: 0;
+    transition: opacity 1s 999999s;
+}
+
+.b_testi:hover {
+    box-shadow: 5px 5px 15px rgba(3, 0, 0, 0.3);
+}
+
+.b_testi:hover .p_testi{
+    opacity: 1;
+    transition: opacity 1s 0s;
 }
 
 /* --------------------------Contact---------------------------- */
 
-#contact{
+#contact {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    align-content:center ;
+    align-content: center;
     flex-direction: column;
     padding: 5% 25%;
 }
 
-.c_box{
+.b_contact {
     text-transform: capitalize;
 
     display: flex;
@@ -323,26 +361,30 @@ h1{
 
     flex: 1 1 100%;
     padding: 30px 30px;
-    width: 100%; 
+    width: 100%;
     min-width: 300px;
 
     border-radius: 10px;
     border-width: 1px;
     background-color: white;
-    box-shadow: 1px 1px 5px rgb(155, 155, 155) ;
+    box-shadow: 1px 1px 5px rgb(155, 155, 155);
 
     height: 10px;
 }
 
-.c_input{
+.b_contact:hover {
+    box-shadow: 5px 5px 15px rgba(3, 0, 0, 0.3);
+}
+
+.i_contact {
     border-radius: 4px;
     border: 1px solid rgb(186, 186, 186);
-    padding-left:10px ;
+    padding-left: 10px;
     width: 100%;
     height: 30px;
 }
 
-#send{
+#send {
     background-color: rgb(185, 57, 57);
     color: white;
     border-radius: 15px;
@@ -350,19 +392,25 @@ h1{
     padding: 0 10px;
 }
 
-#msg{
+#msg {
     height: 100px;
     border-radius: 4px;
     padding: 10px 10px;
     max-width: 100%;
     min-width: 100%;
     max-height: 100px;
+    min-height: 50px;
     scroll-behavior: auto;
+}
+
+#send:hover {
+    background-color: white;
+    color: rgb(185, 57, 57);
 }
 
 /* ------------------------Footer------------------------------ */
 
-footer{
+footer {
     background-color: black;
     height: 80px;
 
@@ -371,19 +419,24 @@ footer{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    align-content: center ;  
+    align-content: center;
 
     text-align: center;
 
     color: white;
 }
 
-#cr{
+#cr {
     flex-basis: 100%
 }
 
-.or{
+.or {
     margin: 0 10px;
 }
 
-/* ------------------------------------------------------ */
+.social:hover {
+    color: rgb(255, 235, 210);
+}
+
+
+/* -----------------------END------------------------------- */
