@@ -18,7 +18,9 @@ body {
 
     background-color: rgb(255, 235, 210);
 
-    color: rgb(185, 57, 57);    
+    color: rgb(185, 57, 57); 
+
+    overscroll-behavior-y: none;
 }
 
 /* body {
