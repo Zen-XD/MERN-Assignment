@@ -212,3 +212,176 @@ const Q20 = () => {
     console.log(arr);
 }
 // Q20();
+
+
+
+const Q21 = () => {
+    const arr = [1, [2, 3], [4, 5]];
+    let str = arr.toString();
+    let upper = str.toUpperCase();
+    let arr1 = upper.split(',')
+    console.log(arr1);
+}
+// Q21();
+
+
+
+const Q22 = () => {
+    const arr = [5, 10, 15, 20];
+    let sum = arr.reduce((prev, current) => {
+        return (prev + current);
+    })
+    let avg = sum / arr.length;
+    console.log(avg);
+}
+// Q22();
+
+
+
+const Q23 = () => {
+    const arr = [3, 6, 9, 12];
+    let sortArr = arr.sort((a, b) => {
+        return a - b;
+    })
+    check = true;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == sortArr[i]) {
+            continue;
+        }
+        else {
+            check = false;
+            break;
+        }
+    }
+    console.log(check);
+}
+// Q23();
+
+
+
+const Q24 = () => {
+    const arr = [1, 2, 3, 4, 5];
+    arr.unshift(arr.pop());
+    console.log(arr);
+}
+// Q24();
+
+
+
+const Q25 = () => {
+    const arr = [4, 8, 12, 16];
+    let newArr = arr.map((value) => {
+        return value / 2;
+    })
+    console.log(newArr);
+}
+// Q25();
+
+
+
+const Q26 = () => {
+    const arr = [1, 0, false, 5, "", 10];
+    let newArr = arr.filter((value) => {
+        if (value != 0) {
+            return value;
+        }
+    })
+    console.log(newArr);
+}
+// Q26();
+
+
+
+const Q27 = () => {
+    const arr = ["a", "b", "c"];
+    let str = arr.join("");
+    let newArr = str.split(',');
+    console.log(newArr);
+}
+// Q27();
+
+
+
+const Q28 = () => {
+    let arr = [10, 20, 30];
+    arr.splice(2, 0, 25);
+    console.log(arr);
+}
+// Q28();
+
+
+
+const Q29 = () => {
+    const arr = [2, 4, 6, 8];
+    let check = arr.every((value) => {
+        return value % 2 == 0;
+    })
+    console.log(check)
+}
+// Q29();
+
+
+
+const Q30 = () => {
+    const arr = [1, 3, 5, 8];
+    let check = arr.some((value) => {
+        return value % 2 == 0;
+    })
+    console.log(check)
+}
+// Q30();
+
+
+
+const Q31 = () => {
+    const arr = [1, 2, 3, 4, 5];
+    let sqr = arr.map((value) => {
+        return value ** 2;
+    })
+    console.log(sqr);
+}
+// Q31();
+
+
+
+// const Q32 = () => {
+//     const arr = ["ram", "shyam", "hari"];
+//     const result = arr.map((value) => {
+//         return value.charAt(0).toUpperCase() + value.slice(1)
+//     });
+//     console.log(result);
+// }
+// Q32();
+
+
+
+const Q33 = () => {
+    const arr = [5, 15, 25, 35];
+    let newArr = arr.filter((value) => {
+        return value > 10 && value < 30;
+    })
+    console.log(newArr);
+}
+// Q33();
+
+
+
+// const Q34 = () => {
+//     const arr = [10, 20, 20, 30, 30];
+//     const newArr = arr.filter((value, index) => {
+//         return arr.indexOf(value) === index
+//     });
+//     console.log(newArr);
+// }
+// Q34();
+
+
+
+const Q35 = () => {
+    const arr = [1, 2, 3, 4];
+    let sum = arr.reduce((sum, value) => {
+        return sum + value;
+    })
+    console.log(sum);
+}
+Q35();
