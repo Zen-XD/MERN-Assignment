@@ -384,4 +384,4 @@ const Q35 = () => {
     })
     console.log(sum);
 }
-Q35();
+// Q35();
