@@ -1,29 +1,29 @@
 import React from "react";
 
-const Card = ({ title, duration, price, original, category }) => {
+const Card = ({ props }) => {
     return (
         <div className="card">
             <img
-                src="https://via.placeholder.com/400x200?text=Course+Image"
-                alt={title}
+                src={props.image}
+                alt={props.title}
             />
 
             <div className="rating">★ ★ ★ ★ ★</div>
 
-            <a href="#">{title}</a>
+            <a href="#">{props.title}</a>
 
-            <p className="duration">⏱ {duration}</p>
+            <p className="duration">⏱ {props.duration}</p>
 
             <div className="author">
                 <div className="avatar">SI</div>
                 <div className="author-text">
-                    By Sipalaya InfoTech <span>in {category}</span>
+                    By Sipalaya InfoTech <span>in {props.category}</span>
                 </div>
             </div>
 
             <div className="price-row">
-                <span className="original">Rs.{original}</span>
-                <span className="price">Rs.{price}</span>
+                <span className="original">Rs.{props.original}</span>
+                <span className="price">Rs.{props.price}</span>
             </div>
 
             <button className="add-cart">Add to cart</button>
