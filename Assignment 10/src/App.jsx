@@ -12,7 +12,7 @@ import Work from "./pages/Work";
 
 const App = () => {
   return (
-    <div className="flex items-center justify-center bg-black font-['Poppins']">
+    <div className="flex items-center justify-center bg-radial from-cyan-950 to-black font-['Poppins'] max-h-screen max-w-screen overflow-hidden scroll-smooth">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -25,6 +25,7 @@ const App = () => {
       </Routes>
       <Navbar />
     </div>
+    
   );
 };
 

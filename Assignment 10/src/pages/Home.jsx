@@ -18,9 +18,7 @@ const Home = () => {
         A <span className="text-cyan-500">M.E.R.N. </span> Developer
       </p>
       <p className="w-5/10 text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-        placeat impedit repellat officiis quam repellendus illo odio dolore non
-        aliquid.
+        Hello I am Rojen Maharjan a beginer M.E.R.N. developer on my journey to learn to code and develop wep apps.
       </p>
       <div className="flex gap-5">
         <a

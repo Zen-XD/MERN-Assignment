@@ -13,14 +13,13 @@ import {
 
 const Navbar = () => {
   const navStyle = ({ isActive }) =>
-    `p-2 rounded-full ${
-      isActive
-        ? "bg-radial from-cyan-400 to-blue-500"
-        : "hover:text-cyan-500"
+    `p-2 rounded-full ${isActive
+      ? "bg-radial from-cyan-400 to-blue-500"
+      : "hover:text-cyan-500"
     }`;
 
   return (
-    <div className="flex flex-col justify-center items-center rounded-full bg-cyan-950 shadow-[0_0_35px] shadow-cyan-300 text-white  gap-5 px-3 py-5 mx-10">
+    <div className="flex flex-col justify-center items-center rounded-full bg-cyan-950 shadow-[0_0_35px] shadow-cyan-300 text-white gap-5 px-3 py-5 mx-10">
       <NavLink to="/" className={navStyle}>
         <House />
       </NavLink>
