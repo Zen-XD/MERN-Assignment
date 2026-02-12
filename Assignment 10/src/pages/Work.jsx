@@ -16,18 +16,23 @@ const Work = () => {
           src={p1}
           title="M.U.R.E.C."
           details="An intelligent music recommendation app that recommends music based on your mood."
+          lang={["Python", "HTML", "CSS"]}
         />
+
         <Card
           link="https://github.com/Zen-XD/Major"
           src={p2}
           title="Questify"
           details="An exam generator web app that can help you prepare for your exams (On going)."
+          lang={["Python", "React", "TailwindCSS"]}
         />
+
         <Card
           link="https://github.com/Zen-XD/MERN-Assignment"
           src={p3}
           title="Portfolio"
           details="A portfolio about me and my work and a way to contact me."
+          lang={["React", "TailwindCSS"]}
         />
       </div>
     </div>
