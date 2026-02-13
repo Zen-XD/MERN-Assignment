@@ -48,11 +48,11 @@ const App = () => {
               </div>
             </div>
 
-            <div className="relative flex justify-center lg:justify-end">
+            <div className="relative flex justify-center">
               <div className="relative w-full max-w-125">
                 <img
                   src={png}
-                  alt="3D Illustration"
+                  alt="art"
                   className="w-full h-auto object-contain"
                 />
               </div>
